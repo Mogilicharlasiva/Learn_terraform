@@ -6,4 +6,15 @@ terraform {
     }
   }
 }
-Adding extra line to test
+
+provider "aws" {
+  region = "us-east-2"
+}
+
+resource "aws_instance" "EC2_instance" {
+  ami           = "ami-0862be96e41dcbf74"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "testEC2Withtf"
+  }
+}
