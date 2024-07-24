@@ -10,3 +10,5 @@ Terraform is HashiCorp's infrastructure as code tool. It lets you define resourc
 - The human-readable configuration language helps you write infrastructure code quickly.
 - Terraform's state allows you to track resource changes throughout your deployments.
 - You can commit your configurations to version control to safely collaborate on infrastructure.
+
+Each Terraform configuration must be in its own working directory. Create a directory for your configuration.
