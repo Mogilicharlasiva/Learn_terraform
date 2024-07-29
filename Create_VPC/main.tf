@@ -64,5 +64,5 @@ output "subnet_output" {
 }
 
 output "VPC_output" {
-  value = aws_vpc.custom_vpc
+  value = aws_vpc.custom_vpc.id
 }
