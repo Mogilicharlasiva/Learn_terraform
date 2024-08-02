@@ -9,8 +9,8 @@ data "terraform_remote_state" "name" {
   }
 }
 resource "aws_security_group" "aws_sg_for_pub" {
-  vpc_id = data.terraform_remote_state.custom_vpc.outputs.VPC_output
-  #vpc_id = aws_vpc.custom_vpc.id
+  #vpc_id = data.terraform_remote_state.custom_vpc.outputs.VPC_output
+  vpc_id = aws_vpc.custom_vpc.id
   tags = {
     Name = "aws_sg_for_pub"
   }
